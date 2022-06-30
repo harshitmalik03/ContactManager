@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ContactManager/static/css/main.a7c190e5.css",
+    "main.js": "/ContactManager/static/js/main.e58706bc.js",
+    "static/media/dhoni_image.jpg": "/ContactManager/static/media/dhoni_image.0427fc0502f612734998.jpg",
+    "index.html": "/ContactManager/index.html",
+    "main.a7c190e5.css.map": "/ContactManager/static/css/main.a7c190e5.css.map",
+    "main.e58706bc.js.map": "/ContactManager/static/js/main.e58706bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7c190e5.css",
+    "static/js/main.e58706bc.js"
+  ]
+}
