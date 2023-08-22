@@ -5,21 +5,21 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import ContactDetails from "./ContactDetails";
 
 const ContactCard = (props) => {
-    const { id , name , email} = props.contact;
+    console.log(props);
+    const { id , name , email, image} = props.contact;
+    const imageSrc = image ? URL.createObjectURL(image) : dhoni_image;
+    console.log(imageSrc);
 
     return (
         <div className="item contact-card">
-            <img className="ui avatar image" src = {dhoni_image} alt = "user" />
+            <img className="ui avatar image" src={imageSrc} alt = "user" />
                 <div className="content">
-                    
                     <div className="header">
-                    <Link to  =  {'/contactdetails/' + id}  state= {{id: id, name: name, email: email}}> {name}</Link>
-                   
-                    
+                    <Link to  =  {'/contactdetails/' + id}  state= {{id: id, name: name, image: imageSrc,email: email}}> {name}</Link>
                     </div>
                     <div>{email}</div>
                 </div>
-                <i className="trash alternate outline icon" style={{color : "red" , marginTop : "7px"}}
+                <i className="trash alternate outline icon" style={{color : "red" , marginTop : "7px", cursor: "pointer"}}
                 onClick = { () => props.clickHandler(id) }
                 ></i>
             

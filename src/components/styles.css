@@ -28,7 +28,7 @@ hr{
 
 
 /* ContactList File */
-
+/* 
 
 .contactlist-heading {
     color: #3e26c3;
@@ -53,6 +53,51 @@ hr{
     top: 20px;
     
     
+} */
+
+/* .contact-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+} */
+
+.contact-details-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+}
+
+.contact-details-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-name {
+  margin: 0;
+  font-size: 24px;
+}
+
+.contact-email {
+  margin: 0;
+  color: #777;
+}
+
+.contact-details-info {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.contact-details-info h4 {
+  margin-bottom: 10px;
+}
+
+.contact-details-info p {
+  margin: 0;
+  font-size: 16px;
 }
 
 
